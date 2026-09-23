@@ -52,26 +52,28 @@ Embedding:
 [ 1.70083828e-02  5.86691052e-02 -7.10436329e-02 ... ]````
 ```
 
-Installation
-Clone the repository:
-git clone https://github.com/aswini1228/Embedding-Model.git
+## Installation
+- Clone the repository:
+- git clone https://github.com/aswini1228/Embedding- Model.git
 cd Embedding-Model
-pip install -r requirements.txt
+- pip install -r requirements.txt
  Run the Project
-python embedding.py 
-Applications
-Semantic Search
-Text Similarity
-Document Matching
-Question Answering
-Recommendation Systems
-Natural Language Processing (NLP)
-Future Enhancements
-Add custom user input
-Build an interactive Streamlit interface
-Add similarity visualization
-Implement semantic search
-Support document-level similarity
- Author
-Aswini.S
-B.Sc Computer Science with Artificial Intelligence
+- python embedding.py
+- 
+## Applications
+- Semantic Search
+- Text Similarity
+- Document Matching
+- Question Answering
+- Recommendation Systems
+- Natural Language Processing (NLP)
+
+## Future Enhancements
+- Add custom user input
+- Build an interactive Streamlit interface
+- Add similarity visualization
+- Implement semantic search
+- Support document-level similarity
+ ## Author
+- Aswini.S
+- B.Sc Computer Science with Artificial Intelligence
