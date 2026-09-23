@@ -18,8 +18,8 @@ Cosine similarity is then applied to compare these vectors and identify sentence
 - Use a pre-trained Sentence Transformer model
 
 ##  Workflow
+```
 
-```text
 Input Sentences
       ↓
 Sentence Transformer
@@ -49,14 +49,16 @@ Example:
 Sentence: I enjoy coding in Python.
 
 Embedding:
-[ 1.70083828e-02  5.86691052e-02 -7.10436329e-02 ... ]
+[ 1.70083828e-02  5.86691052e-02 -7.10436329e-02 ... ]````
+```
+
 Installation
 Clone the repository:
 git clone https://github.com/aswini1228/Embedding-Model.git
 cd Embedding-Model
 pip install -r requirements.txt
  Run the Project
-python embedding.py
+python embedding.py 
 Applications
 Semantic Search
 Text Similarity
