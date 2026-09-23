@@ -4,25 +4,25 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Load the embedding model
 model = SentenceTransformer("all-mpnet-base-v2")
 
-# Sample sentences
+# Input sentences
 sentences = [
-    "I love learning Artificial Intelligence.",
-    "I enjoy studying AI.",
-    "Python is a programming language.",
-    "I like coding in Python.",
+    "I enjoy coding in Python.",
+    "I love programming in Python.",
+    "Python is my favorite programming language.",
     "The weather is very hot today.",
-    "It is a sunny and warm day.",
-    "Machine learning is a part of Artificial Intelligence."
+    "It is raining heavily outside.",
+    "I went to college this morning.",
+    "My college has many computer science students."
 ]
 
-# Generate embeddings
+# Generate sentence embeddings
 embeddings = model.encode(sentences)
 
-# Display basic information
+# Display information
 print("Total number of sentences:", len(sentences))
 print("Embedding dimension:", embeddings.shape[1])
 
-print("\n--- Similarity between sentence pairs ---")
+print("\n--- Similarity between sentences ---")
 
 # Calculate cosine similarity
 for i in range(len(sentences)):
@@ -33,8 +33,10 @@ for i in range(len(sentences)):
             [embeddings[j]]
         )[0][0]
 
-        # Display only highly similar pairs
-        if similarity >= 0.7:
-            print("\nSentence 1:", sentences[i])
-            print("Sentence 2:", sentences[j])
-            print("Similarity:", round(similarity, 4))
+        # Display highly similar pairs
+        if similarity > 0.7:
+            print(
+                f"\n'{sentences[i]}'\n"
+                f"'{sentences[j]}'\n"
+                f"Similarity: {similarity:.4f}"
+            )
